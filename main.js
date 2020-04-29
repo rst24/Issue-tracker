@@ -1,4 +1,3 @@
-document.getElementById('issueInputForm').addEventListener('submit', saveIssue);
 const saveIssue = (e) => {
     var issueDesc = document.getElementById('issueDescInput').value;
     var issueSeverity = document.getElementById('issueSeverityInput').value;
@@ -28,6 +27,7 @@ const saveIssue = (e) => {
     fetchIssues();
     e.preventDefault();
 }
+document.getElementById('issueInputForm').addEventListener('submit', saveIssue);
 
 const setStatusClosed = (id) => {
     var issues = JSON.parse(localStorage.getItem('issues'));
