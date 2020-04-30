@@ -57,7 +57,7 @@ const  fetchIssues= () => {
 
     issueList.innerHTML = '';
 
-    for(var i = 0; i < issues.length; i++){
+    for(var i = 0; i < [issues].length; i++){
         var id = issues[i].id;
         var desc = issues[i].description;
         var severity = issues[i].severity;
